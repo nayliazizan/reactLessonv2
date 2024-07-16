@@ -46,3 +46,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.blogList {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.ui.card {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.6);
+}
