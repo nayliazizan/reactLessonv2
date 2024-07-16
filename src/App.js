@@ -3,12 +3,13 @@ import './App.css';
 import Welcome from './components/Welcome';
 import Timekeeper from './components/Timekeeper';
 import OnOffControl from './components/OnOffControl';
+import Clock from './components/Clock';
 
 function App() {
 
   return (
     <>
-      <OnOffControl />
+      <Clock />
     </>
   );
 }
