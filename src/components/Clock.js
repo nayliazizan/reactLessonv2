@@ -11,7 +11,6 @@ function Timekeeper() {
         }, 1000);
 
         return () => {
-            console.log("cleanup of interval");
             clearInterval(interval);
         }
     }, [time]);
