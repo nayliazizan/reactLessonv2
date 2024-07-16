@@ -5,7 +5,7 @@ function Clock() {
     const [time, setTime] = useState(new Date());
 
     useEffect(() => {
-        console.log("component mounted/updated");
+        
         const interval = setInterval(() => {
             setTime(new Date());
         }, 1000);
