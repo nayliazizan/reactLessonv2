@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-function Timekeeper() {
+function Clock() {
 
     const [time, setTime] = useState(new Date());
 
@@ -21,10 +21,9 @@ function Timekeeper() {
 
     return (
         <div className="App">
-            <h1 align="center" style={{marginTop:'30px'}}>Time Now:</h1>
-            <h1 align="center">{hours}:{minutes}:{seconds}</h1>
+            <h1 style={{marginTop:'20px'}}>{hours}:{minutes}:{seconds}</h1>
         </div>
     );
 }
 
-export default Timekeeper;
+export default Clock;

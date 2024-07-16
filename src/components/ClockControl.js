@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Timekeeper from "./Timekeeper";
+import Clock from "./Clock.js";
 
-function OnOffControl() {
+function ClockControl() {
     const [isOn, setIsOn] = useState(false);
     const handleOnClick = () => {
         setIsOn(true);
@@ -22,18 +22,25 @@ function OnOffControl() {
 
 function OnButton(props) {
     return(
-        <button onClick={props.onClick}>Open Timekeeper</button>
+        <div>
+            <h1>Time Now:</h1>
+            <button className="ui secondary basic button" onClick={props.onClick}>Turn on clock</button>
+            <h1>Clock is off</h1>
+        </div>
     )
 }
 
 function OffButton(props) {
     return(
         <div>
-            <button onClick={props.onClick}>Close Timekeeper</button>
-            <Timekeeper />
+            <h1>Time Now:</h1>
+            <button className="ui secondary basic button" onClick={props.onClick}>
+                Turn off clock
+            </button>
+            <Clock />
         </div>
         
     )
 }
 
-export default OnOffControl;
+export default ClockControl;
