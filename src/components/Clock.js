@@ -21,6 +21,7 @@ function Clock() {
 
     return (
         <div className="App">
+            <h1>Time Now:</h1>
             <h1 style={{marginTop:'20px'}}>{hours}:{minutes}:{seconds}</h1>
         </div>
     );
